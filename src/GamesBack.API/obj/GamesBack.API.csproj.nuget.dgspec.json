@@ -1,0 +1,361 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.API/GamesBack.API.csproj": {}
+  },
+  "projects": {
+    "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.API/GamesBack.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.API/GamesBack.API.csproj",
+        "projectName": "GamesBack.API",
+        "projectPath": "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.API/GamesBack.API.csproj",
+        "packagesPath": "/Users/pc/.nuget/packages/",
+        "outputPath": "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.API/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/pc/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/sdk/7.0.305/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Application/GamesBack.Application.csproj": {
+                "projectPath": "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Application/GamesBack.Application.csproj"
+              },
+              "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Contracts/GamesBack.Contracts.csproj": {
+                "projectPath": "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Contracts/GamesBack.Contracts.csproj"
+              },
+              "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Infrastructure/GamesBack.Infrastructure.csproj": {
+                "projectPath": "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Infrastructure/GamesBack.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Carter": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
+            "Mapster": {
+              "target": "Package",
+              "version": "[7.3.0, )"
+            },
+            "Mapster.DependencyInjection": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.305/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Application/GamesBack.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Application/GamesBack.Application.csproj",
+        "projectName": "GamesBack.Application",
+        "projectPath": "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Application/GamesBack.Application.csproj",
+        "packagesPath": "/Users/pc/.nuget/packages/",
+        "outputPath": "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/pc/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Domain/GamesBack.Domain.csproj": {
+                "projectPath": "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Domain/GamesBack.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "FluentResults": {
+              "target": "Package",
+              "version": "[3.15.2, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.6.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.305/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Contracts/GamesBack.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Contracts/GamesBack.Contracts.csproj",
+        "projectName": "GamesBack.Contracts",
+        "projectPath": "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Contracts/GamesBack.Contracts.csproj",
+        "packagesPath": "/Users/pc/.nuget/packages/",
+        "outputPath": "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Contracts/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/pc/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.305/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Domain/GamesBack.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Domain/GamesBack.Domain.csproj",
+        "projectName": "GamesBack.Domain",
+        "projectPath": "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Domain/GamesBack.Domain.csproj",
+        "packagesPath": "/Users/pc/.nuget/packages/",
+        "outputPath": "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/pc/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.305/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Infrastructure/GamesBack.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Infrastructure/GamesBack.Infrastructure.csproj",
+        "projectName": "GamesBack.Infrastructure",
+        "projectPath": "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Infrastructure/GamesBack.Infrastructure.csproj",
+        "packagesPath": "/Users/pc/.nuget/packages/",
+        "outputPath": "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/pc/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Application/GamesBack.Application.csproj": {
+                "projectPath": "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Application/GamesBack.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.305/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

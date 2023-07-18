@@ -1,0 +1,15 @@
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Application/bin/Debug/net7.0/GamesBack.Application.deps.json
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Application/bin/Debug/net7.0/GamesBack.Application.dll
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Application/bin/Debug/net7.0/GamesBack.Application.pdb
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Application/bin/Debug/net7.0/GamesBack.Domain.dll
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Application/bin/Debug/net7.0/GamesBack.Domain.pdb
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Application/obj/Debug/net7.0/GamesBack.Application.csproj.AssemblyReference.cache
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Application/obj/Debug/net7.0/GamesBack.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Application/obj/Debug/net7.0/GamesBack.Application.AssemblyInfoInputs.cache
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Application/obj/Debug/net7.0/GamesBack.Application.AssemblyInfo.cs
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Application/obj/Debug/net7.0/GamesBack.Application.csproj.CoreCompileInputs.cache
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Application/obj/Debug/net7.0/GamesBack.Application.csproj.CopyComplete
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Application/obj/Debug/net7.0/GamesBack.Application.dll
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Application/obj/Debug/net7.0/refint/GamesBack.Application.dll
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Application/obj/Debug/net7.0/GamesBack.Application.pdb
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Application/obj/Debug/net7.0/ref/GamesBack.Application.dll

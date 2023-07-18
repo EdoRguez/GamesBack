@@ -1,0 +1,17 @@
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Infrastructure/bin/Debug/net7.0/GamesBack.Infrastructure.deps.json
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Infrastructure/bin/Debug/net7.0/GamesBack.Infrastructure.dll
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Infrastructure/bin/Debug/net7.0/GamesBack.Infrastructure.pdb
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Infrastructure/bin/Debug/net7.0/GamesBack.Application.dll
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Infrastructure/bin/Debug/net7.0/GamesBack.Domain.dll
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Infrastructure/bin/Debug/net7.0/GamesBack.Application.pdb
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Infrastructure/bin/Debug/net7.0/GamesBack.Domain.pdb
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Infrastructure/obj/Debug/net7.0/GamesBack.Infrastructure.csproj.AssemblyReference.cache
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Infrastructure/obj/Debug/net7.0/GamesBack.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Infrastructure/obj/Debug/net7.0/GamesBack.Infrastructure.AssemblyInfoInputs.cache
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Infrastructure/obj/Debug/net7.0/GamesBack.Infrastructure.AssemblyInfo.cs
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Infrastructure/obj/Debug/net7.0/GamesBack.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Infrastructure/obj/Debug/net7.0/GamesBack.Infrastructure.csproj.CopyComplete
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Infrastructure/obj/Debug/net7.0/GamesBack.Infrastructure.dll
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Infrastructure/obj/Debug/net7.0/refint/GamesBack.Infrastructure.dll
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Infrastructure/obj/Debug/net7.0/GamesBack.Infrastructure.pdb
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Infrastructure/obj/Debug/net7.0/ref/GamesBack.Infrastructure.dll

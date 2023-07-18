@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "mG92xdVHqXxVdKMC/gOZUT2ateJGYTRJsifdLAnvyH0s4TZnWv7IwXX2k7iqMgLPmjVscVug+6JzC530tG3JTQ==",
+  "success": true,
+  "projectFilePath": "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Domain/GamesBack.Domain.csproj",
+  "expectedPackageFiles": [
+    "/Users/pc/.nuget/packages/mediatr/12.1.1/mediatr.12.1.1.nupkg.sha512",
+    "/Users/pc/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/Users/pc/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
