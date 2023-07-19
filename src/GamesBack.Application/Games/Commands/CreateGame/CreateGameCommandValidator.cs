@@ -31,6 +31,6 @@ public class CreateGameCommandValidator : AbstractValidator<CreateGameCommand>
     private async Task<bool> PublisherIdExists(string id, CancellationToken token)
     {
         await Task.CompletedTask;
-        return _publisherRepo.Exists(Guid.Parse(id));
+        return await _publisherRepo.Exists(Guid.Parse(id));
     }
 }

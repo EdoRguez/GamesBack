@@ -17,7 +17,7 @@ public sealed class Game : AggregateRoot<GameId>
         string name,
         List<Review> reviews,
         PublisherId publisherId
-    )
+    ) : base(gameId)
     {
        Update(
         name,

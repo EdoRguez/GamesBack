@@ -10,6 +10,7 @@ public class PublishersConfiguration : IEntityTypeConfiguration<Publisher>
     public void Configure(EntityTypeBuilder<Publisher> builder)
     {
         ConfigurePublishers(builder);
+        ConfigureData(builder);
     }
 
     private void ConfigurePublishers(EntityTypeBuilder<Publisher> builder)
@@ -32,5 +33,12 @@ public class PublishersConfiguration : IEntityTypeConfiguration<Publisher>
 
         builder.HasMany(x => x.Games)
             .WithOne(x => x.Publisher);
+    }
+
+    private void ConfigureData(EntityTypeBuilder<Publisher> builder)
+    {
+        builder.HasData(
+            Publisher.Create(Guid.Parse("10bdf658-4d44-4b08-9e9d-6e428c0d7599"), "Ubisoft")
+        );
     }
 }

@@ -57,3 +57,4 @@
 /Users/pc/Documents/Projects/GamesBack/src/GamesBack.API/obj/Debug/net7.0/GamesBack.API.pdb
 /Users/pc/Documents/Projects/GamesBack/src/GamesBack.API/obj/Debug/net7.0/GamesBack.API.genruntimeconfig.cache
 /Users/pc/Documents/Projects/GamesBack/src/GamesBack.API/obj/Debug/net7.0/ref/GamesBack.API.dll
+/Users/pc/Documents/Projects/GamesBack/src/GamesBack.API/bin/Debug/net7.0/Carter.dll

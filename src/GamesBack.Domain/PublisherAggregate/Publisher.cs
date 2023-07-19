@@ -12,37 +12,44 @@ public sealed class Publisher : AggregateRoot<PublisherId>
 
     private Publisher(
         PublisherId publisherId,
-        string name,
-        List<Game> games
-    )
+        string name
+    ) : base(publisherId)
     {
         Update(
-            name,
-            games
+            name
         );
     }
 
     public static Publisher Create(
-        string name,
-        List<Game> games
+        string name
     )
     {
         Publisher publisher = new Publisher(
             PublisherId.CreateUnique(),
-            name,
-            games
+            name
+        );
+
+        return publisher;
+    }
+
+    public static Publisher Create(
+        Guid publisherId,
+        string name
+    )
+    {
+        Publisher publisher = new Publisher(
+            PublisherId.Create(publisherId),
+            name
         );
 
         return publisher;
     }
 
     public void Update(
-        string name,
-        List<Game> games
+        string name
     )
     {
         Name = name;
-        _games = games;
     }
 
 

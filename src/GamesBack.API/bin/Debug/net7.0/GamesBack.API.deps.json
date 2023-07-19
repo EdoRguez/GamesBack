@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "GamesBack.API/1.0.0": {
         "dependencies": {
+          "Carter": "7.1.0",
           "GamesBack.Application": "1.0.0",
           "GamesBack.Contracts": "1.0.0",
           "GamesBack.Infrastructure": "1.0.0",
@@ -19,6 +20,18 @@
         },
         "runtime": {
           "GamesBack.API.dll": {}
+        }
+      },
+      "Carter/7.1.0": {
+        "dependencies": {
+          "FluentValidation": "11.6.0",
+          "Microsoft.Extensions.DependencyModel": "7.0.0"
+        },
+        "runtime": {
+          "lib/net7.0/Carter.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.1.0.0"
+          }
         }
       },
       "FluentResults/3.15.2": {
@@ -590,6 +603,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Carter/7.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JDV2fUuj3SYYYk/xHmSElIXISeQxnUm7n9tJ73gAOCxSaUN218oNiGd5BG5jZBa6jp+rhYyIqAV7qBzaqWA7sg==",
+      "path": "carter/7.1.0",
+      "hashPath": "carter.7.1.0.nupkg.sha512"
     },
     "FluentResults/3.15.2": {
       "type": "package",

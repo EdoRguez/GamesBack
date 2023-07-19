@@ -1,4 +1,5 @@
 using GamesBack.Application.Common.Interfaces.Persistence;
+using Microsoft.EntityFrameworkCore;
 
 namespace GamesBack.Infrastructure.Persistence.Repository;
 
@@ -11,8 +12,9 @@ public class PublisherRepository : IPublisherRepository
         _db = db;
     }
 
-    public bool Exists(Guid id)
+    public async Task<bool> Exists(Guid id)
     {
-        return _db.Publishers.Any(x => x.Id.Value == id);
+        var publishers = await _db.Publishers.ToListAsync();
+        return publishers.Any(x => x.Id.Value == id);
     }
 }
