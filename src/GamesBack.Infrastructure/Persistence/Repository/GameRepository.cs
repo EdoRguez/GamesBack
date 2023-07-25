@@ -18,15 +18,12 @@ public class GameRepository : IGameRepository
     {
         if(!trackChanges)
         {
-            return await _appDbContext.Games
-                                        .AsNoTracking()
-                                        .IncludeMultiple(includes)
-                                        .SingleOrDefaultAsync(x => x.Id.Value == id);
+            var games = await _appDbContext.Games.AsNoTracking().IncludeMultiple(includes).ToListAsync();
+            return games.SingleOrDefault(x => x.Id.Value == id);
         }
 
-        return await _appDbContext.Games
-                                        .IncludeMultiple(includes)
-                                        .SingleOrDefaultAsync(x => x.Id.Value == id);
+        var gamesList = await _appDbContext.Games.IncludeMultiple(includes).ToListAsync();
+        return gamesList.SingleOrDefault(x => x.Id.Value == id);
     }
 
     public async Task<IEnumerable<Game>> GetAll(bool trackChanges = false, string[]? includes = null)
@@ -47,5 +44,16 @@ public class GameRepository : IGameRepository
     public void Add(Game game)
     {
         _appDbContext.Add(game);
+    }
+
+    public void Delete(Game game)
+    {
+        _appDbContext.Remove(game);
+    }
+
+    public async Task<bool> Exists(Guid id)
+    {
+        var games = await _appDbContext.Games.ToListAsync();
+        return games.Any(x => x.Id.Value == id);
     }
 }

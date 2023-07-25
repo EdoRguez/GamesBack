@@ -17,7 +17,7 @@ public class GetAllGameQueryHandler : IRequestHandler<GetAllGameQuery, Result<IE
 
     public async Task<Result<IEnumerable<Game>>> Handle(GetAllGameQuery request, CancellationToken cancellationToken)
     {
-        string[] includes = { GameIncludes.Review, GameIncludes.Publisher };
+        string[] includes = { GameIncludes.Reviews, GameIncludes.Publishers };
 
         var games = await _gameRepo.GetAll(false, includes);
 
