@@ -6,6 +6,7 @@ public abstract class Entity<TId> : IEquatable<Entity<TId>>, IHasDomainEvents wh
     public TId Id { get; protected set; }
     public IReadOnlyList<IDomainEvent> DomainEvents => _domainEvents.AsReadOnly();
 
+    #pragma warning disable
     // EF Requirement
     protected Entity()
     {
