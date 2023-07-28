@@ -2,6 +2,7 @@ using GamesBack.API;
 using GamesBack.Application;
 using GamesBack.Infrastructure;
 using Carter;
+using GamesBack.API.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 {
@@ -21,6 +22,7 @@ var app = builder.Build();
     }
 
     app.UseHttpsRedirection();
+    app.UseMiddleware<GlobalExceptionHandlingMiddleware>();
     app.MapCarter();
     app.Run();
 }

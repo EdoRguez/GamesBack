@@ -1,6 +1,7 @@
 using System.Text.Json.Serialization;
 using Carter;
 using GamesBack.API.Common.Mapping;
+using GamesBack.API.Middlewares;
 using Microsoft.AspNetCore.Http.Json;
 
 namespace GamesBack.API;
@@ -16,6 +17,8 @@ public static class DependencyInjection
 
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
+
+        services.AddTransient<GlobalExceptionHandlingMiddleware>();
 
         services.AddCarter();
 
