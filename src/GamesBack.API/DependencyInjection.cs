@@ -8,7 +8,7 @@ namespace GamesBack.API;
 
 public static class DependencyInjection
 {
-    public static IServiceCollection AddPresentation(this IServiceCollection services)
+    public static IServiceCollection AddPresentation(this IServiceCollection services, IConfiguration configuration)
     {
         services.Configure<JsonOptions>(options =>
         {
@@ -20,6 +20,12 @@ public static class DependencyInjection
 
         services.AddTransient<GlobalExceptionHandlingMiddleware>();
 
+        services.AddStackExchangeRedisCache(redisOptions =>
+        {
+            string? connection = configuration.GetConnectionString("Redis");
+            redisOptions.Configuration = connection;
+        });
+        
         services.AddCarter();
 
         services.AddMappings();

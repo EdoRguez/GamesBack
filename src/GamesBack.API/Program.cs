@@ -7,7 +7,7 @@ using GamesBack.API.Middlewares;
 var builder = WebApplication.CreateBuilder(args);
 {
     builder.Services
-        .AddPresentation()
+        .AddPresentation(builder.Configuration)
         .AddApplication()
         .AddInfrastructure();
 }
