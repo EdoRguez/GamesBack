@@ -1,7 +1,8 @@
 using System.Collections.Concurrent;
-using System.Text.Json;
 using GamesBack.Application.Common.Interfaces.Caching;
+using GamesBack.Infrastructure.Common.Resolvers;
 using Microsoft.Extensions.Caching.Distributed;
+using Newtonsoft.Json;
 
 namespace GamesBack.Infrastructure.Caching;
 
@@ -22,7 +23,12 @@ public class CacheService : ICacheService
         if(cachedValue is null)
             return null;
 
-        T? value = JsonSerializer.Deserialize<T>(cachedValue);
+        T? value = JsonConvert.DeserializeObject<T>(cachedValue, new JsonSerializerSettings()
+        {
+            // Configuration for private setters properties
+            ContractResolver = new PrivatePropertyResolver(),
+            ConstructorHandling = ConstructorHandling.AllowNonPublicDefaultConstructor
+        });
 
         return value;
     }
@@ -46,7 +52,10 @@ public class CacheService : ICacheService
 
     public async Task SetAsync<T>(string key, T value, CancellationToken cancellationToken = default) where T : class
     {
-        string cacheValue = JsonSerializer.Serialize<T>(value);
+        string cacheValue = JsonConvert.SerializeObject(value, new JsonSerializerSettings
+        {
+            ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+        });
 
         await _distributedCache.SetStringAsync(key, cacheValue, cancellationToken);
 

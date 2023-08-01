@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+fCaq2h+ebsmfMUBijk0e0B3NRVyuGu7sLliExymvQFMW7Z7/xS4HMLJuT2stObjA6reOxWLr3RGk8YngwAkZA==",
+  "dgSpecHash": "FuV0rboeu/K2lkuI0gdxhfQK8T6l6KebGDeSrtQgk3y5WqVUkkfb2rOua7dM/hpIFR4sTptH6pOym4GHPoPplw==",
   "success": true,
   "projectFilePath": "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.API/GamesBack.API.csproj",
   "expectedPackageFiles": [
@@ -39,6 +39,7 @@
     "/Users/pc/.nuget/packages/microsoft.win32.registry/5.0.0/microsoft.win32.registry.5.0.0.nupkg.sha512",
     "/Users/pc/.nuget/packages/microsoft.win32.systemevents/5.0.0/microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "/Users/pc/.nuget/packages/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg.sha512",
+    "/Users/pc/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
     "/Users/pc/.nuget/packages/npgsql/7.0.4/npgsql.7.0.4.nupkg.sha512",
     "/Users/pc/.nuget/packages/npgsql.entityframeworkcore.postgresql/7.0.4/npgsql.entityframeworkcore.postgresql.7.0.4.nupkg.sha512",
     "/Users/pc/.nuget/packages/pipelines.sockets.unofficial/2.2.0/pipelines.sockets.unofficial.2.2.0.nupkg.sha512",

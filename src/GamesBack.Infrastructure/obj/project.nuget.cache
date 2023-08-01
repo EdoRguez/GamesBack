@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "URI8Wkbe3g3EQAMlV9mK1GX/F491By+6I50XjuPrOGahIRdyLk3jQNgdtXBIFRYCkF7EZMhjsbcWx9EBvyngyw==",
+  "dgSpecHash": "S4tuq4HoRhjC7/f5nrV8lcd2sK2vOl4f8WmHa5vwwCOB5Bk1MZpa85paUDHLE/S6hLV1g8MsMm3Rh8SMYcToQg==",
   "success": true,
   "projectFilePath": "/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Infrastructure/GamesBack.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,7 @@
     "/Users/pc/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
     "/Users/pc/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
     "/Users/pc/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "/Users/pc/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
     "/Users/pc/.nuget/packages/npgsql/7.0.4/npgsql.7.0.4.nupkg.sha512",
     "/Users/pc/.nuget/packages/npgsql.entityframeworkcore.postgresql/7.0.4/npgsql.entityframeworkcore.postgresql.7.0.4.nupkg.sha512",
     "/Users/pc/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512"

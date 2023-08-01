@@ -25,7 +25,7 @@ public static class DependencyInjection
             string? connection = configuration.GetConnectionString("Redis");
             redisOptions.Configuration = connection;
         });
-        
+
         services.AddCarter();
 
         services.AddMappings();
