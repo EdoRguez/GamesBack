@@ -1,10 +1,17 @@
+using System.IO.Compression;
 using FluentResults;
+using GamesBack.Application.Common.CacheModels.Game;
 using GamesBack.Application.Common.Constants;
 using GamesBack.Application.Common.Includes;
 using GamesBack.Application.Common.Interfaces.Caching;
 using GamesBack.Application.Common.Interfaces.Persistence;
 using GamesBack.Domain.GameAggregate;
+using GamesBack.Domain.GameAggregate.Entities;
+using GamesBack.Domain.GameAggregate.ValueObjects;
+using GamesBack.Domain.PublisherAggregate;
+using GamesBack.Domain.PublisherAggregate.ValueObjects;
 using MediatR;
+using System.Collections.Generic;
 
 namespace GamesBack.Application.Games.Queries.GetAllGame;
 
@@ -21,10 +28,27 @@ public class GetAllGameQueryHandler : IRequestHandler<GetAllGameQuery, Result<IE
 
     public async Task<Result<IEnumerable<Game>>> Handle(GetAllGameQuery request, CancellationToken cancellationToken)
     {
-        IEnumerable<Game>? cacheGames = await _cacheService.GetAsync<IEnumerable<Game>>(CacheConstants.Games, cancellationToken);
+        List<GameCache>? gamesCache = await _cacheService.GetAsync<List<GameCache>>(CacheConstants.Games, cancellationToken);
 
-        if(cacheGames is not null)
-            return Result.Ok(cacheGames);
+        if(gamesCache is not null)
+        {
+            var gamesResult = gamesCache.ConvertAll(x =>
+            {
+                return Game.Create(
+                    GameId.Create(x.Id.Value),
+                    x.Name,
+                    x.Reviews.ConvertAll(y =>
+                        Review.Create(ReviewId.Create(y.Id.Value),
+                                        y.Description, y.Rating)
+                    ),
+                    PublisherId.Create(x.PublisherId.Value),
+                    Publisher.Create(x.Publisher.Id.Value, x.Publisher.Name)
+                );
+            })
+            .AsEnumerable();
+
+            return Result.Ok(gamesResult);
+        }
 
         string[] includes = { GameIncludes.Reviews, GameIncludes.Publishers };
 

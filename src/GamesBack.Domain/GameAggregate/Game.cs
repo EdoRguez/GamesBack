@@ -16,27 +16,50 @@ public sealed class Game : AggregateRoot<GameId>
         GameId gameId,
         string name,
         List<Review> reviews,
-        PublisherId publisherId
+        PublisherId publisherId,
+        Publisher? publisher = null
     ) : base(gameId)
     {
        Update(
         name,
         reviews,
-        publisherId
+        publisherId,
+        publisher
        );
     }
 
     public static Game Create(
         string name,
         List<Review> reviews,
-        PublisherId publisherId
+        PublisherId publisherId,
+        Publisher? publisher = null
     )
     {
         Game game = new Game(
             GameId.CreateUnique(),
             name,
             reviews,
-            publisherId
+            publisherId,
+            publisher
+        );
+
+        return game;
+    }
+
+    public static Game Create(
+        GameId gameId,
+        string name,
+        List<Review> reviews,
+        PublisherId publisherId,
+        Publisher? publisher = null
+    )
+    {
+        Game game = new Game(
+            gameId,
+            name,
+            reviews,
+            publisherId,
+            publisher
         );
 
         return game;
@@ -45,12 +68,15 @@ public sealed class Game : AggregateRoot<GameId>
     public void Update(
         string name,
         List<Review> reviews,
-        PublisherId publisherId
+        PublisherId publisherId,
+        Publisher? publisher = null
     )
     {
         Name = name;
         _reviews = reviews;
         PublisherId = publisherId;
+        if(publisher is not null)
+            Publisher = publisher;
     }
 
     private List<Review> _reviews = new();
