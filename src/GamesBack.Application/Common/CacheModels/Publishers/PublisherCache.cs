@@ -1,12 +1,7 @@
 namespace GamesBack.Application.Common.CacheModels.Publishers;
 
-public class PublisherCacheId
-{
-    public Guid Value { get; private set; }
-}
+public record PublisherCacheId(Guid Value);
 
-public class PublisherCache
-{
-    public PublisherCacheId Id { get;  set; } = null!;
-    public string Name { get;  set; } = null!;
-}
+public record PublisherCache(
+    PublisherCacheId Id,
+    string Name);

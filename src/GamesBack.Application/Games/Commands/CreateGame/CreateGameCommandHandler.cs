@@ -1,4 +1,6 @@
 using FluentResults;
+using GamesBack.Application.Common.Constants;
+using GamesBack.Application.Common.Interfaces.Caching;
 using GamesBack.Application.Common.Interfaces.Persistence;
 using GamesBack.Domain.GameAggregate;
 using GamesBack.Domain.GameAggregate.Entities;
@@ -11,11 +13,13 @@ public class CreateGameCommandHandler : IRequestHandler<CreateGameCommand, Resul
 {
     private readonly IUnitOfWork _unitOfWork;
     private readonly IGameRepository _gameRepo;
+    private readonly ICacheService _cacheService;
 
-    public CreateGameCommandHandler(IUnitOfWork unitOfWork, IGameRepository gameRepository)
+    public CreateGameCommandHandler(IUnitOfWork unitOfWork, IGameRepository gameRepository, ICacheService cacheService)
     {
         _unitOfWork = unitOfWork;
         _gameRepo = gameRepository;
+        _cacheService = cacheService;
     }
 
     public async Task<Result<Game>> Handle(CreateGameCommand request, CancellationToken cancellationToken)
@@ -28,6 +32,8 @@ public class CreateGameCommandHandler : IRequestHandler<CreateGameCommand, Resul
 
         _gameRepo.Add(game);
         await _unitOfWork.SaveChangesAsync();
+
+        await _cacheService.RemoveAsync(CacheConstants.Games);
 
         return game;
     }

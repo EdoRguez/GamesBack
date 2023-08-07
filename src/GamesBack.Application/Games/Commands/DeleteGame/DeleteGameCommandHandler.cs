@@ -1,5 +1,7 @@
 using FluentResults;
+using GamesBack.Application.Common.Constants;
 using GamesBack.Application.Common.Errors;
+using GamesBack.Application.Common.Interfaces.Caching;
 using GamesBack.Application.Common.Interfaces.Persistence;
 using GamesBack.Domain.GameAggregate;
 using MediatR;
@@ -10,11 +12,13 @@ public class DeleteGameCommandHandler : IRequestHandler<DeleteGameCommand, Resul
 {
     private readonly IUnitOfWork _unitOfWork;
     private readonly IGameRepository _gameRepo;
+    private readonly ICacheService _cacheService;
 
-    public DeleteGameCommandHandler(IUnitOfWork unitOfWork, IGameRepository gameRepo)
+    public DeleteGameCommandHandler(IUnitOfWork unitOfWork, IGameRepository gameRepo, ICacheService cacheService)
     {
         _unitOfWork = unitOfWork;
         _gameRepo = gameRepo;
+        _cacheService = cacheService;
     }
 
     public async Task<Result<Game>> Handle(DeleteGameCommand request, CancellationToken cancellationToken)
@@ -26,6 +30,8 @@ public class DeleteGameCommandHandler : IRequestHandler<DeleteGameCommand, Resul
 
         _gameRepo.Delete(game);
         await _unitOfWork.SaveChangesAsync();
+
+        await _cacheService.RemoveAsync(CacheConstants.Games);
 
         return Result.Ok();
     }
