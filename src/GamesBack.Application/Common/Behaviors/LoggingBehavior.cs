@@ -8,7 +8,7 @@ namespace GamesBack.Application.Common.Behaviors;
 public class LoggingBehavior<TRequest, TResponse> :
     IPipelineBehavior<TRequest, TResponse>
         where TRequest : IRequest<TResponse>
-        where TResponse : Result
+        where TResponse : ResultBase
 {
     private readonly ILogger<LoggingBehavior<TRequest, TResponse>> _logger;
 

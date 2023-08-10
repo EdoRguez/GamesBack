@@ -7,7 +7,7 @@ namespace GamesBack.Application.Common.Behaviors;
 public class ValidationBehavior<TRequest, TResponse> :
     IPipelineBehavior<TRequest, TResponse>
         where TRequest : IRequest<TResponse>
-        //where TResponse : Result
+        where TResponse : ResultBase
 {
     private readonly IValidator<TRequest>? _validator;
 
