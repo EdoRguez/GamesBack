@@ -1,7 +1,6 @@
 /Users/pc/Documents/Projects/GamesBack/src/GamesBack.Contracts/bin/Debug/net7.0/GamesBack.Contracts.deps.json
 /Users/pc/Documents/Projects/GamesBack/src/GamesBack.Contracts/bin/Debug/net7.0/GamesBack.Contracts.dll
 /Users/pc/Documents/Projects/GamesBack/src/GamesBack.Contracts/bin/Debug/net7.0/GamesBack.Contracts.pdb
-/Users/pc/Documents/Projects/GamesBack/src/GamesBack.Contracts/obj/Debug/net7.0/GamesBack.Contracts.csproj.AssemblyReference.cache
 /Users/pc/Documents/Projects/GamesBack/src/GamesBack.Contracts/obj/Debug/net7.0/GamesBack.Contracts.GeneratedMSBuildEditorConfig.editorconfig
 /Users/pc/Documents/Projects/GamesBack/src/GamesBack.Contracts/obj/Debug/net7.0/GamesBack.Contracts.AssemblyInfoInputs.cache
 /Users/pc/Documents/Projects/GamesBack/src/GamesBack.Contracts/obj/Debug/net7.0/GamesBack.Contracts.AssemblyInfo.cs
